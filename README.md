@@ -36,8 +36,6 @@
 ---
 - Make sure you have installed the lovelace [fold-entity-row](https://github.com/thomasloven/lovelace-fold-entity-row), [fontawesome icons](https://github.com/thomasloven/hass-fontawesome), [Cupertino Icons](https://github.com/menahishayan/HomeAssistant-Cupertino-Icons), [Button Card](https://github.com/custom-cards/button-card) and the integration [Neerslag app](https://github.com/aex351/home-assistant-neerslag-app). This can be done manually or directly via hacs
 
-<img width="618" alt="image" src="https://user-images.githubusercontent.com/77990847/114733529-b6ca1a00-9d43-11eb-876a-6f4beda466ec.png">
-
 
 ## Installation Add-on ⚙️
 ---
@@ -53,13 +51,60 @@
 
 ## Add more cards
 ---
-- If some `sensors` not showing after this manual, please add the correct `sensor` to monitor
-- The dashboard will refresh every 10 minutes. When you want to skip this, delete the code between line 66 till 69
+- If you want yto add more cards, copy the code from line 11 till 61 and pase it in 'dwains-dashboard/addons/more_page/find_my/page.yaml'
+### Example
 ```yaml
- - cards:
-   Refresh: null
-   type: 'custom:auto-reload-card'
-   delay_in_minute: 10
+        - type: entities
+          title: Devices #PERSON
+          style: |
+            ha-card {
+              border-radius: 10px;
+              padding-bottom: 10px;
+              background-color: var(--dwains-theme-primary)
+            }
+            :host {
+              --paper-item-icon-color: var(--dwains-theme-accent) !important;
+            }
+            .card-header {
+              padding: 5px 16px;
+              font-size: 15px;
+              font-weight: 700 !important;
+            }
+            .card-content div {
+                margin: 0 !important;
+            }
+            #states {
+              padding-top: 0px !important;
+              padding-bottom: 0px !important;
+            }
+            .secondary {
+              color: darkgray !important;
+              margin-left: 2px !important;
+            }
+          entities:
+            - entity: person.1 # <- fill in the right person
+              secondary_info: last-updated
+            - entity: device_tracker.1 # <- fill in the right device_tracker
+              secondary_info: last-updated
+            - type: custom:fold-entity-row
+              head:
+                type: section
+                label: Meer devices
+              entities:
+                - entity: device_tracker.2 # <- fill in the right device_tracker
+                  secondary_info: last-updated
+                - entity: device_tracker.3 # <- fill in the right device_tracker
+                  secondary_info: last-updated
+                - entity: device_tracker.4 # <- fill in the right device_tracker
+                  secondary_info: last-updated
+            - type: 'divider'
+              style:
+                pandding-top: 10px;
+                height: 1px
+                width: 100%
+                margin-left: auto
+                margin-right: auto
+                background: "var(--primary-text-color)"
 ```
 
 ## Result

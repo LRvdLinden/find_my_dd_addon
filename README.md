@@ -107,7 +107,7 @@
                 background: "var(--primary-text-color)"
 ```
 
-## Show on map ⚙️
+## Show on map 🗺️
 ---
 - If you want to add more persons to the map, add more `entities`
 - You can turn `dark_mode` off bij changing `true` into `false`

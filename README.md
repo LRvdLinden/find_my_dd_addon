@@ -27,7 +27,7 @@
 
 
 <p align="center">
-  <img src="https://cdn.wccftech.com/wp-content/uploads/2021/03/Find-My-Using-Siri-HomePod.png" />
+  <img src="https://www.iclarified.com/images/news/75056/366308/366308-1920.jpg" />
 </p>
 
 

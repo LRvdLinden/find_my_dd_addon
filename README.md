@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/badge/HACS-Default-orange.svg" />
   </a>
   <a href="https://github.com/LRvdLinden/find_my_dd_addon">
-    <img src="https://img.shields.io/github/v/release/LRvdLinden/weather_dd_addon" />
+    <img src="https://img.shields.io/github/v/release/LRvdLinden/find_my_dd_addon" />
   </a>
     <a href="https://github.com/LRvdLinden/">
     <img src="https://img.shields.io/github/followers/LRvdLinden?style=social" />
@@ -132,6 +132,6 @@
 
 
 ---
-Enjoy my card? Help me out for a couple of :beers: or a :coffee:!
+Enjoy my dashboard? Help me out for a couple of :beers: or a :coffee:!
 
 [![coffee](https://www.buymeacoffee.com/assets/img/custom_images/black_img.png)](https://www.buymeacoffee.com/LRvdLinden)

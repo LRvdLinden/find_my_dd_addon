@@ -49,7 +49,7 @@
 ```
 - Reload the theme configuration via Theme Settings
 
-## Add more cards
+## Add more cards ⚙️
 ---
 - If you want to add more cards, copy the code from line `11` till `61` and pase it in on line `63` `dwains-dashboard/addons/more_page/find_my/page.yaml`
 ### Example
@@ -105,6 +105,22 @@
                 margin-left: auto
                 margin-right: auto
                 background: "var(--primary-text-color)"
+```
+
+## Show on map ⚙️
+---
+- If you want to add more persons to the map, add more entities
+- You can turn `dark_mode` off bij changing `true` into `false`
+- `hours_to_show` you can plus the hours or delete the line, if you don't wwant to see tracking on the map
+### Example
+```yaml
+    - type: map
+      item_classes: 'col-xs-12 col-sm-9'
+      entities:
+        - entity: person.1 # <- fill in the right person
+        - entity: person.2 # <- fill in the right person
+      dark_mode: true
+      hours_to_show: 2
 ```
 
 ## Result

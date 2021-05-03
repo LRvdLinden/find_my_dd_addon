@@ -27,7 +27,7 @@
 
 
 <p align="center">
-  <img src="https://image.freepik.com/free-vector/weather-vector-banner_36298-522.jpg" />
+  <img src="https://cdn.wccftech.com/wp-content/uploads/2021/03/Find-My-Using-Siri-HomePod.png" />
 </p>
 
 

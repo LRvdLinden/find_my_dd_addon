@@ -123,6 +123,13 @@
       hours_to_show: 2
 ```
 
+## Custom icons 🎨
+---
+```yaml
+ios:apps-iphone
+ios:apps-ipad
+```
+
 ## Result
 ---
 ![image](https://user-images.githubusercontent.com/77990847/116847119-2e27f680-abea-11eb-8eaf-02a91e623a1b.png)

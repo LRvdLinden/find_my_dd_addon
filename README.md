@@ -51,7 +51,7 @@
 
 ## Add more cards
 ---
-- If you want yto add more cards, copy the code from line 11 till 61 and pase it in 'dwains-dashboard/addons/more_page/find_my/page.yaml'
+- If you want to add more cards, copy the code from line `11` till `61` and pase it in on line `63` `dwains-dashboard/addons/more_page/find_my/page.yaml`
 ### Example
 ```yaml
         - type: entities

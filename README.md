@@ -125,6 +125,7 @@
 
 ## Custom icons 🎨
 ---
+- Make sure you have installed the lovelace [Cupertino Icons](https://github.com/menahishayan/HomeAssistant-Cupertino-Icons). This can be done manually or directly via hacs
 ```yaml
 ios:apps-iphone
 ios:apps-ipad

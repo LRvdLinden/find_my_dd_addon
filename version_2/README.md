@@ -20,7 +20,7 @@
   </a>
 </p>
 <p align="center">Find My in Home Assistant Dwains Dashboard.</p>
-
+<p align="center">Version 2</p>
 
 <p align="center">Created by <a href="https://github.com/LRvdLinden">Léon van der Linden</a>
 </p> 

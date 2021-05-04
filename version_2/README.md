@@ -40,7 +40,7 @@
 
 ## Installation Add-on ⚙️
 ---
-- Copy the `find_my` folder in to the `dwains-dashboard/addons/more_page` directory.
+- Copy `find_my` folder from directory `version_2/find_my`in to the `dwains-dashboard/addons/more_page/` directory.
 - Open your `more_page.yaml` file in `dwains-dashboard/configs` and add the following;
 ```yaml
   - name: Find My
@@ -52,60 +52,53 @@
 
 ## Add more cards ⚙️
 ---
-- If you want to add more cards, copy the code from line `12` till `62` and pase it in on line `63` `dwains-dashboard/addons/more_page/find_my/page.yaml`
+- If you want to add more cards, copy a whole row`
 ### Example
 ```yaml
-        - type: entities
-          title: Devices #PERSON
-          style: |
-            ha-card {
-              border-radius: 10px;
-              padding-bottom: 10px;
-              background-color: var(--dwains-theme-primary)
-            }
-            :host {
-              --paper-item-icon-color: var(--dwains-theme-accent) !important;
-            }
-            .card-header {
-              padding: 5px 16px;
-              font-size: 15px;
-              font-weight: 700 !important;
-            }
-            .card-content div {
-                margin: 0 !important;
-            }
-            #states {
-              padding-top: 0px !important;
-              padding-bottom: 0px !important;
-            }
-            .secondary {
-              color: darkgray !important;
-              margin-left: 2px !important;
-            }
-          entities:
-            - entity: person.1 # <- fill in the right person
-              secondary_info: last-updated
-            - entity: device_tracker.1 # <- fill in the right device_tracker
-              secondary_info: last-updated
-            - type: custom:fold-entity-row
-              head:
-                type: section
-                label: Meer devices
-              entities:
-                - entity: device_tracker.2 # <- fill in the right device_tracker
-                  secondary_info: last-updated
-                - entity: device_tracker.3 # <- fill in the right device_tracker
-                  secondary_info: last-updated
-                - entity: device_tracker.4 # <- fill in the right device_tracker
-                  secondary_info: last-updated
-            - type: 'divider'
-              style:
-                pandding-top: 10px;
-                height: 1px
-                width: 100%
-                margin-left: auto
-                margin-right: auto
-                background: "var(--primary-text-color)"
+                    #devices row 1   
+                  - type: vertical-stack
+                    cards:
+                      - type: entities
+                        title: Devices NAME PERSON # <- fill in the right name
+                        style: |
+                          ha-card {
+                            border-radius: 10px;
+                            padding-bottom: 10px;
+                            background-color: var(--dwains-theme-primary)
+                          }
+                          :host {
+                            --paper-item-icon-color: var(--dwains-theme-accent) !important;
+                          }
+                          .card-header {
+                            padding: 5px 16px;
+                            font-size: 15px;
+                            font-weight: 700 !important;
+                          }
+                          #states {
+                            padding-top: 0px !important;
+                            padding-bottom: 0px !important;
+                          }
+                          .secondary {
+                            color: darkgray !important;
+                            margin-left: 2px !important;
+                          }
+                        entities:
+                          - entity: device_tracker.1 # <- fill in the right device_tracker
+                            secondary_info: last-updated
+                          - entity: device_tracker.2 # <- fill in the right device_tracker
+                            secondary_info: last-updated
+                          - entity: device_tracker.3 # <- fill in the right device_tracker
+                            secondary_info: last-updated
+                          - entity: device_tracker.4 # <- fill in the right device_tracker
+                            secondary_info: last-updated
+                          - type: 'divider'
+                            style:
+                              pandding-top: 10px;
+                              height: 1px
+                              width: 100%
+                              margin-left: auto
+                              margin-right: auto
+                              background: "var(--primary-text-color)"
 ```
 
 ## Show on map 🗺️
@@ -113,6 +106,7 @@
 - If you want to add more persons to the map, add more `entities`
 - You can turn `dark_mode` off bij changing `true` into `false`
 - `hours_to_show` you can plus the hours or delete the line, if you don't wwant to see tracking on the map
+- 
 ### Example
 ```yaml
     - type: map

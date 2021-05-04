@@ -138,6 +138,7 @@ ios:apps-ipad
 
 ![image](https://user-images.githubusercontent.com/77990847/117045374-bb18a000-ad0f-11eb-84c6-8248d2b74bdd.png)
 
+![image](https://user-images.githubusercontent.com/77990847/117045664-0d59c100-ad10-11eb-8c1d-ec26c6b51dd1.png)
 
 
 ---

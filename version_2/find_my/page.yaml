@@ -315,7 +315,7 @@
                               margin-left: auto
                               margin-right: auto
                               background: "var(--primary-text-color)"  
-                    #objects row 1  
+                    #objects row 2 
                   - type: vertical-stack
                     cards:
                       - type: entities

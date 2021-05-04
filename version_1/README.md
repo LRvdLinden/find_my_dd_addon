@@ -40,7 +40,7 @@
 
 ## Installation Add-on ⚙️
 ---
-- Copy the `find_my` folder in to the `dwains-dashboard/addons/more_page` directory.
+- Copy `find_my` folder from directory `version_1/find_my`in to the `dwains-dashboard/addons/more_page/` directory.
 - Open your `more_page.yaml` file in `dwains-dashboard/configs` and add the following;
 ```yaml
   - name: Find My
@@ -52,7 +52,7 @@
 
 ## Add more cards ⚙️
 ---
-- If you want to add more cards, copy the code from line `12` till `62` and pase it in on line `63` `dwains-dashboard/addons/more_page/find_my/page.yaml`
+- If you want to add more cards, copy the code from line `12` till `62` and pase it in on line `63`
 ### Example
 ```yaml
         - type: entities

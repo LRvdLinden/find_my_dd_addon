@@ -126,6 +126,10 @@ ios:apps-iphone
 ios:apps-ipad
 ```
 
+## Extra Geo option 🗺️
+---
+- For city, street and streetnumber instead of zone, you can use the integration [GoogleGeocode-HASS](https://github.com/michaelmcarthur/GoogleGeocode-HASS). 
+
 ## Result
 ---
 ![image](https://user-images.githubusercontent.com/77990847/117045174-8278c680-ad0f-11eb-93d2-7d10c589b42f.png)

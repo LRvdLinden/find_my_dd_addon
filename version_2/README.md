@@ -130,7 +130,7 @@ ios:apps-ipad
 ## Extra Geo option 🗺️
 ---
 - For city, street and streetnumber instead of zone, you can use the integration [GoogleGeocode-HASS](https://github.com/michaelmcarthur/GoogleGeocode-HASS). 
-- This integration only show street, streetnumber and city, when you outside of a Home Assistant Zone
+- This integration only show street, streetnumber and city, when you outside of a Home Assistant zone
 
 ## Result
 ---

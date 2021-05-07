@@ -1,7 +1,7 @@
 ## Created by Léon van der Linden
 ## https://github.com/LRvdLinden
 ## More-page add-on: Find My
-## Version-2: 2.0.1
+## Version-2: 2.0.2
 - type: custom:dwains-flexbox-card
   items_classes: 'col-xs-12'
   cards:
@@ -138,20 +138,33 @@
                         entities:
                           - entity: device_tracker.1 # <- fill in the right device_tracker
                             secondary_info: last-updated
+                            type: 'custom:multiple-entity-row'
+                            entities:
+                              - entity: sensor.ipad_battery_state # <- fill in the right sensor._battery_state
+                                name: Batterij # <- translate name
+                                unit: '%'
                           - entity: device_tracker.2 # <- fill in the right device_tracker
                             secondary_info: last-updated
+                            type: 'custom:multiple-entity-row'
+                            entities:
+                              - entity: sensor.ipad_battery_state # <- fill in the right sensor._battery_state
+                                name: Batterij # <- translate name
+                                unit: '%'
                           - entity: device_tracker.3 # <- fill in the right device_tracker
                             secondary_info: last-updated
+                            type: 'custom:multiple-entity-row'
+                            entities:
+                              - entity: sensor.ipad_battery_state # <- fill in the right sensor._battery_state
+                                name: Batterij # <- translate name
+                                unit: '%'
                           - entity: device_tracker.4 # <- fill in the right device_tracker
                             secondary_info: last-updated
-                          - type: 'divider'
-                            style:
-                              pandding-top: 10px;
-                              height: 1px
-                              width: 100%
-                              margin-left: auto
-                              margin-right: auto
-                              background: "var(--primary-text-color)"
+                            type: 'custom:multiple-entity-row'
+                            entities:
+                              - entity: sensor.ipad_battery_state # <- fill in the right sensor._battery_state
+                                name: Batterij # <- translate name
+                                unit: '%'
+
                     #devices row 2
                   - type: vertical-stack
                     cards:
@@ -182,18 +195,26 @@
                         entities:
                           - entity: device_tracker.1 # <- fill in the right device_tracker
                             secondary_info: last-updated
+                            type: 'custom:multiple-entity-row'
+                            entities:
+                              - entity: sensor.ipad_battery_state # <- fill in the right sensor._battery_state
+                                name: Batterij # <- translate name
+                                unit: '%'
                           - entity: device_tracker.2 # <- fill in the right device_tracker
                             secondary_info: last-updated
+                            type: 'custom:multiple-entity-row'
+                            entities:
+                              - entity: sensor.ipad_battery_state # <- fill in the right sensor._battery_state
+                                name: Batterij # <- translate name
+                                unit: '%'
                           - entity: device_tracker.3 # <- fill in the right device_tracker
                             secondary_info: last-updated
-                          - type: 'divider'
-                            style:
-                              pandding-top: 10px;
-                              height: 1px
-                              width: 100%
-                              margin-left: auto
-                              margin-right: auto
-                              background: "var(--primary-text-color)"
+                            type: 'custom:multiple-entity-row'
+                            entities:
+                              - entity: sensor.ipad_battery_state # <- fill in the right sensor._battery_state
+                                name: Batterij # <- translate name
+                                unit: '%'
+
                     #devices row 3
                   - type: vertical-stack
                     cards:
@@ -224,16 +245,19 @@
                         entities:
                           - entity: device_tracker.1 # <- fill in the right device_tracker
                             secondary_info: last-updated
+                            type: 'custom:multiple-entity-row'
+                            entities:
+                              - entity: sensor.ipad_battery_state # <- fill in the right sensor._battery_state
+                                name: Batterij # <- translate name
+                                unit: '%'
                           - entity: device_tracker.2 # <- fill in the right device_tracker
                             secondary_info: last-updated
-                          - type: 'divider'
-                            style:
-                              pandding-top: 10px;
-                              height: 1px
-                              width: 100%
-                              margin-left: auto
-                              margin-right: auto
-                              background: "var(--primary-text-color)"          
+                            type: 'custom:multiple-entity-row'
+                            entities:
+                              - entity: sensor.ipad_battery_state # <- fill in the right sensor._battery_state
+                                name: Batterij # <- translate name
+                                unit: '%'
+    
   
 
               #OBJECTS VIEW
@@ -307,14 +331,7 @@
                             name: Car
                             icon: mdi:car
                             secondary_info: last-updated
-                          - type: 'divider'
-                            style:
-                              pandding-top: 10px;
-                              height: 1px
-                              width: 100%
-                              margin-left: auto
-                              margin-right: auto
-                              background: "var(--primary-text-color)"  
+
                     #objects row 2 
                   - type: vertical-stack
                     cards:
@@ -355,24 +372,6 @@
                             name: Car
                             icon: mdi:car
                             secondary_info: last-updated
-                          - type: 'divider'
-                            style:
-                              pandding-top: 10px;
-                              height: 1px
-                              width: 100%
-                              margin-left: auto
-                              margin-right: auto
-                              background: "var(--primary-text-color)"    
-
-    - type: vertical-stack
-      item_classes: 'col-xs-12 col-sm-9'
-      cards:         
-        - type: map
-          entities:
-            - entity: person.1 # <- fill in the right person
-            - entity: person.2 # <- fill in the right person
-          dark_mode: true
-          hours_to_show: 2
        
        
 #MAP VIEWS

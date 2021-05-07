@@ -129,6 +129,21 @@ ios:apps-ipad
 - For city, street and streetnumber instead of zone, you can use the integration [GoogleGeocode-HASS](https://github.com/michaelmcarthur/GoogleGeocode-HASS). 
 - This integration only show street, streetnumber and city, when you outside of a Home Assistant zone
 
+## Battery state 🔋
+---
+![image](https://user-images.githubusercontent.com/77990847/117411827-511d1800-af14-11eb-91f5-3ea72bf42cfd.png)
+
+- To add the the battery state, make sure you have installed [multiple-entity-row](https://github.com/benct/lovelace-multiple-entity-row) This can be done manually or directly via hacs
+
+```yaml
+  type: 'custom:multiple-entity-row'
+  entities:
+    - entity: sensor.ipad_battery_state # <- fill in the right sensor._battery_state
+      name: Batterij
+      unit: '%'
+```
+
+
 ## Result
 ---
 ![May-05-2021 16-34-07](https://user-images.githubusercontent.com/77990847/117158717-f7a3d480-adbf-11eb-999b-a703ec506a00.gif)

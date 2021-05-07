@@ -101,7 +101,7 @@
 - If you want to add more persons to the map, add more `entities`
 - You can turn `dark_mode` off bij changing `true` into `false`
 - `hours_to_show` you can plus the hours or delete the line, if you don't wwant to see tracking on the map
-- 
+
 ### Example
 ```yaml
     - type: map

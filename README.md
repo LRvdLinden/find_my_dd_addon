@@ -22,7 +22,7 @@
 
 
 <p align="center">
-  <img src="https://www.iclarified.com/images/news/75056/366308/366308-1920.jpg" />
+  <img src="https://user-images.githubusercontent.com/77990847/117984419-1f52e980-b338-11eb-90d6-0432b736868e.png" />
 </p>
 
 
